@@ -37,12 +37,15 @@ a {
 }
 
 .header-sect {
-    display: inline-flex;
-    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-sect hr {
-    width: 100%;
+    width: 80%;
     height: 3px;
 }
 
@@ -113,8 +116,11 @@ main div{
 .citas {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .cita {
@@ -129,5 +135,38 @@ main div{
     border-top: 0;
     padding: 2%;
     margin: 0;
+    align-self: flex-end;
+    width: 30%;
+    text-align: center;
 }
 
+/* Sect-1 Style */
+
+.about-me {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: first baseline;
+}
+
+.container-yo {
+    width: 50%;
+}
+
+.container-skills {
+    width: 50%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-skill {
+    border-bottom: 3px solid #C778DD;
+}
+
+.skill p {
+    margin-top: 30%;
+}
